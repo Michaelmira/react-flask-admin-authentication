@@ -1,0 +1,13 @@
+{% extends 'admin/base.html' %}
+{% block access_control %}
+{% if current_user.is_authenticated %}
+    <div class="d-flex justify-content-center align-items-center h-100">
+        <a href="{{ url_for('admin.logout') }}" 
+           class="btn text-white btn-outline-light btn-lg shadow-sm rounded-pill px-4 py-2 fw-bold text-uppercase"
+           style="color: #ffffff; background-color: #ffffff; border-color: #ffffff;">
+            <i class="fas fa-sign-out-alt me-2" style="color: #000000;"></i> <!-- Icon color to stand out -->
+            <span style="color: #000000;">Log out</span> <!-- Button text color to black -->
+        </a>
+    </div>
+{% endif %}
+{% endblock %}

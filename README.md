@@ -1,3 +1,18 @@
+# Import this Flask login to your [4Geeks](https://github.com/4GeeksAcademy/react-flask-hello) Boilerplate
+- replace admin.py from this boiler plate
+- create folder named templates in src.
+- create folder named admin in src/templates.
+- create file in src/templates/admin named login.html and copy in code from this repo
+- create file in src/templates/admin named master.html and copy in code from this repo
+- pipenv install flask_admin
+
+-- add to .env
+- ADMIN_USERNAME=inputanyusername
+- ADMIN_PASSWORD=inputanypassword
+
+- good to go test and login!
+
+
 # WebApp boilerplate with React JS and Flask API
 
 Build web applications using React.js for the front end and python/flask for your backend API.
